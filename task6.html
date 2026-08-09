@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6 - Mini HTML Project</title>
+</head>
+
+<body>
+
+    <!-- Semantic Header & Navigation -->
+    <header>
+        <h1>Student Learning Portal</h1>
+        <p>A simple mini project demonstrating HTML5 concepts.</p>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#courses">Courses</a> |
+            <a href="#register">Register</a> |
+            <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Semantic Main Section -->
+    <main>
+
+        <!-- Section 1: About & Text Formatting -->
+        <section id="about">
+            <h2>About The Portal</h2>
+            <p>Welcome to the <b>Student Portal</b>. Here you can find <i>free courses</i> and <u>study materials</u>.
+            </p>
+            <p>Formula of Water: H<sub>2</sub>O | Math Power: 2<sup>3</sup> = 8</p>
+            <img src="eLearningPortal.jpg" alt="eLearning Portal Logo" width="150" height="100">
+        </section>
+
+        <hr>
+
+        <!-- Section 2: Lists -->
+        <section id="courses">
+            <h2>Available Courses &amp; Topics</h2>
+
+            <h3>Topics Covered (Unordered List)</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Steps to Join (Ordered List)</h3>
+            <ol>
+                <li>Fill the form</li>
+                <li>Choose a course</li>
+                <li>Start learning</li>
+            </ol>
+
+            <!-- Table -->
+            <h3>Course Fee Table</h3>
+            <table border="1">
+                <tr>
+                    <th>Course</th>
+                    <th>Duration</th>
+                    <th>Fee</th>
+                </tr>
+                <tr>
+                    <td>Web Design</td>
+                    <td>4 Weeks</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>6 Weeks</td>
+                    <td>Free</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Section 3: Forms -->
+        <section id="register">
+            <h2>Quick Registration Form</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="uname">Name:</label><br>
+                    <input type="text" id="uname" name="uname" required>
+                </p>
+                <p>
+                    <label for="uemail">Email:</label><br>
+                    <input type="email" id="uemail" name="uemail" required>
+                </p>
+                <p>
+                    Gender:
+                    <input type="radio" id="g-male" name="gender" value="male">
+                    <label for="g-male">Male</label>
+                    <input type="radio" id="g-female" name="gender" value="female">
+                    <label for="g-female">Female</label>
+                </p>
+                <p>
+                    <label for="ucourse">Select Course:</label><br>
+                    <select id="ucourse" name="ucourse">
+                        <option value="web">Web Design</option>
+                        <option value="python">Python</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree">I agree to terms</label>
+                </p>
+                <p>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Semantic Footer -->
+    <footer>
+        <p>&copy; 2026 Student Learning Portal | <a href="task1.html">Task 1</a> | <a href="task2.html">Task 2</a></p>
+    </footer>
+
+</body>
+
+</html>
