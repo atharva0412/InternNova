@@ -21,3 +21,26 @@ HTML structure, text formatting, hyperlinks, images, lists, tables, forms, input
 
 Purpose
 The assignment helped build a strong foundation in HTML and provided hands-on experience in creating structured static webpages from scratch.
+
+
+Week 2 Assignment - CSS Fundamentals
+
+This project covers the fundamentals of CSS3 through a series of practical tasks. The assignment focuses on styling, designing, and structuring responsive web pages using modern CSS techniques.
+
+Tasks Included
+Task 1: Introduction to CSS & Selectors
+Task 2: CSS Box Model & Styling
+Task 3: Flexbox Layout
+Task 4: CSS Grid Layout
+Task 5: Responsive Design using Media Queries
+Task 6: Mini CSS Project
+
+Technologies Used
+HTML5
+CSS3
+
+Key Concepts Covered
+CSS syntax, external stylesheets, element/class/ID/universal selectors, colors, backgrounds, font styling, text alignment, CSS Box Model (margin, padding, border, box-shadow, width, height), Flexbox layout (flex container, flex direction, justify-content, align-items, flex items), CSS Grid layout (columns, rows, gap, item placement), responsive web design, media queries, and layout composition.
+
+Purpose
+The assignment helped build a strong foundation in modern styling techniques and provided hands-on experience in creating clean, organized, visually appealing, and fully responsive webpage layouts from scratch.
