@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.box {
+  background-color: coral;
+  padding: 20px;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .box {
+    flex: 1;
+  }
+}
