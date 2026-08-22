@@ -44,3 +44,26 @@ CSS syntax, external stylesheets, element/class/ID/universal selectors, colors, 
 
 Purpose
 The assignment helped build a strong foundation in modern styling techniques and provided hands-on experience in creating clean, organized, visually appealing, and fully responsive webpage layouts from scratch.
+
+
+Week 3 Assignment – JavaScript Fundamentals
+
+This project covers the fundamentals of JavaScript through a series of practical tasks. The assignment focuses on core programming logic, data handling, conditional decision-making, and iterative operations using pure JavaScript, without DOM manipulation or event handling.
+
+Tasks Included
+Task 1: JavaScript Basics
+Task 2: Variables & Data Types
+Task 3: Operators
+Task 4: Conditional Statements
+Task 5: Loops
+Task 6: JavaScript Practice Programs
+
+Technologies Used
+HTML5
+JavaScript (ES6+)
+
+Key Concepts Covered
+JavaScript syntax, console logging, comments, external script linking, variable declarations (let, const), data types (String, Number, Boolean, undefined, null), typeof operator, arithmetic, assignment, comparison, and logical operators, increment and decrement operations, conditional branching (if, if...else, else if, nested if), loops (for, while, do...while), loop control, and algorithmic problem-solving.
+
+Purpose
+The assignment helped build a strong foundation in core JavaScript and provided hands-on experience in writing clean, structured code, applying control structures, and solving algorithmic problems from scratch.
