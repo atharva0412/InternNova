@@ -67,3 +67,27 @@ JavaScript syntax, console logging, comments, external script linking, variable 
 
 Purpose
 The assignment helped build a strong foundation in core JavaScript and provided hands-on experience in writing clean, structured code, applying control structures, and solving algorithmic problems from scratch.
+
+
+Week 4 Assignment – Advanced JavaScript & DOM Manipulation
+
+This project covers advanced JavaScript concepts and DOM manipulation through a series of practical tasks. The assignment focuses on handling data structures, writing modular functions, and creating interactive web applications by dynamically updating the webpage in response to user actions.
+
+Tasks Included
+Task 1: JavaScript Functions
+Task 2: Arrays
+Task 3: Objects
+Task 4: DOM Manipulation
+Task 5: Events
+Task 6: Mini JavaScript Project
+
+Technologies Used
+HTML5
+CSS3
+JavaScript (ES6+)
+
+Key Concepts Covered
+Function declarations, arrow functions, parameters and return values, array creation and manipulation (push, pop, splice, forEach), object creation and property management, DOM selection methods, dynamic HTML/CSS updates, creating and removing elements, event handling (click, input, submit, change, mouse events), and integrating all concepts to build a functional, user-friendly interactive application.
+
+Purpose
+The assignment helped bridge the gap between basic programming logic and interactive web development, providing hands-on experience in managing data structures, handling user events, and building dynamic, responsive webpage interfaces from scratch.
