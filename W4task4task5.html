@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM & Events</title>
+    <style>
+        .highlight { background-color: yellow; font-weight: bold; }
+        #box { width: 100px; height: 100px; background-color: lightblue; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">Welcome to JS Interactions</h1>
+    
+    <!-- Form for submit and input events -->
+    <form id="user-form">
+        <input type="text" id="username" placeholder="Type your name..." required>
+        <select id="color-select">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+        </select>
+        <button type="submit">Add User</button>
+    </form>
+
+    <div id="output-area"></div>
+    <div id="box">Hover over me!</div>
+    <ul id="user-list"></ul>
+
+    <script>
+        // --- DOM MANIPULATION (Task 4) ---
+        // Selecting HTML Elements
+        const title = document.getElementById("main-title");
+        const form = document.getElementById("user-form");
+        const nameInput = document.getElementById("username");
+        const colorSelect = document.getElementById("color-select");
+        const userList = document.getElementById("user-list");
+        const box = document.getElementById("box");
+
+        // Changing CSS Styles dynamically
+        title.style.color = "darkblue";
+
+        // --- EVENTS (Task 5) ---
+        
+        // 1. Input Event & Changing Text Content
+        nameInput.addEventListener("input", (e) => {
+            title.textContent = `Welcome, ${e.target.value || 'to JS Interactions'}!`;
+        });
+
+        // 2. Change Event
+        colorSelect.addEventListener("change", (e) => {
+            title.style.color = e.target.value;
+        });
+
+        // 3. Submit Event (Adding & Removing Elements dynamically)
+        form.addEventListener("submit", (e) => {
+            e.preventDefault(); // Prevent page reload
+            
+            // Creating a new element
+            const li = document.createElement("li");
+            // Changing HTML Content
+            li.innerHTML = `<strong>${nameInput.value}</strong> 
+                            <button class="delete-btn">Delete</button>`;
+            
+            // Adding Element
+            userList.appendChild(li);
+            nameInput.value = ""; // Reset input
+        });
+
+        // 4. Click Event (Delegated to the list for deleting items)
+        userList.addEventListener("click", (e) => {
+            if (e.target.classList.contains("delete-btn")) {
+                // Removing Element
+                e.target.parentElement.remove();
+            }
+        });
+
+        // 5. Mouse Events
+        box.addEventListener("mouseover", () => {
+            box.classList.add("highlight");
+            box.textContent = "Hovered!";
+        });
+
+        box.addEventListener("mouseout", () => {
+            box.classList.remove("highlight");
+            box.textContent = "Hover over me!";
+        });
+    </script>
+</body>
+</html>

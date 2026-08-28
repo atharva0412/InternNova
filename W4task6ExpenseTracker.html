@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 400px; margin: 20px auto; }
+        .expense-item { display: flex; justify-content: space-between; padding: 10px; background: #f4f4f4; margin-bottom: 5px; }
+        .total { font-size: 1.5em; font-weight: bold; margin-top: 20px; }
+        form { display: flex; gap: 10px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <h2>Expense Tracker</h2>
+    
+    <form id="expense-form">
+        <input type="text" id="desc" placeholder="Expense description" required>
+        <input type="number" id="amount" placeholder="Amount ($)" required min="1">
+        <button type="submit">Add</button>
+    </form>
+
+    <div id="expense-list"></div>
+    <div class="total">Total: $<span id="total-amount">0</span></div>
+
+    <script>
+        // ARRAY to hold our OBJECTS
+        let expenses = [];
+
+        // DOM Elements
+        const form = document.getElementById("expense-form");
+        const descInput = document.getElementById("desc");
+        const amountInput = document.getElementById("amount");
+        const listDiv = document.getElementById("expense-list");
+        const totalSpan = document.getElementById("total-amount");
+
+        // FUNCTION to calculate total (using Array reduce)
+        const calculateTotal = () => {
+            const total = expenses.reduce((sum, currentItem) => sum + currentItem.amount, 0);
+            totalSpan.textContent = total;
+        };
+
+        // FUNCTION to update the DOM (DOM Manipulation)
+        const renderExpenses = () => {
+            // Clear current HTML content
+            listDiv.innerHTML = ""; 
+            
+            // Iterate through the array
+            expenses.forEach((expense, index) => {
+                const itemDiv = document.createElement("div");
+                itemDiv.className = "expense-item";
+                itemDiv.innerHTML = `
+                    <span>${expense.description}</span>
+                    <span>$${expense.amount} 
+                        <button onclick="deleteExpense(${index})">X</button>
+                    </span>
+                `;
+                listDiv.appendChild(itemDiv);
+            });
+            
+            calculateTotal();
+        };
+
+        // EVENT LISTENER for form submission
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            // Create a new OBJECT
+            const newExpense = {
+                description: descInput.value,
+                amount: parseFloat(amountInput.value)
+            };
+            
+            // Add to ARRAY
+            expenses.push(newExpense);
+            
+            // Reset form and update UI
+            descInput.value = "";
+            amountInput.value = "";
+            renderExpenses();
+        });
+
+        // FUNCTION to remove an item (Requires global scope for inline onclick)
+        window.deleteExpense = (index) => {
+            // Remove from array
+            expenses.splice(index, 1);
+            // Update UI
+            renderExpenses();
+        };
+    </script>
+</body>
+</html>
