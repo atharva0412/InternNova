@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTrack Pro</title>
+    <link rel="stylesheet" href="week5style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>EduTrack Pro</h1>
+            <div class="nav-controls">
+                <input type="text" id="searchInput" placeholder="Search by name...">
+                <button id="themeToggle">🌙 Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="stats-bar">
+        <p>Total Enrolled Students: <strong id="totalCount">0</strong></p>
+        <button id="sortBtn">Sort A-Z ⬇️</button>
+    </div>
+
+    <main>
+        <section class="form-section">
+            <h2 id="formTitle">Add New Student</h2>
+            <form id="studentForm">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" min="4" max="100" required>
+                </div>
+                <div class="input-group">
+                    <label for="course">Course/Grade</label>
+                    <input type="text" id="course" required>
+                </div>
+                <button type="submit" id="submitBtn">Add Student</button>
+                <button type="button" id="cancelBtn" class="hidden">Cancel Edit</button>
+                <p id="error-message" class="error"></p>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Student Directory</h2>
+            <div id="studentContainer" class="card-container">
+                </div>
+        </section>
+    </main>
+
+    <script src="week5script.js"></script>
+</body>
+</html>
