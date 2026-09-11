@@ -3,7 +3,6 @@
 Week 1 Assignment – HTML Fundamentals
 
 This project covers the fundamentals of HTML5 through a series of practical tasks. The assignment focuses on creating structured and semantic webpages using HTML only, without CSS or JavaScript.
-
 Tasks Included
 Task 1: HTML Document Structure
 Task 2: Text Formatting & Basic Elements
@@ -26,7 +25,6 @@ The assignment helped build a strong foundation in HTML and provided hands-on ex
 Week 2 Assignment - CSS Fundamentals
 
 This project covers the fundamentals of CSS3 through a series of practical tasks. The assignment focuses on styling, designing, and structuring responsive web pages using modern CSS techniques.
-
 Tasks Included
 Task 1: Introduction to CSS & Selectors
 Task 2: CSS Box Model & Styling
@@ -47,7 +45,6 @@ The assignment helped build a strong foundation in modern styling techniques and
 
 
 Week 3 Assignment – JavaScript Fundamentals
-
 This project covers the fundamentals of JavaScript through a series of practical tasks. The assignment focuses on core programming logic, data handling, conditional decision-making, and iterative operations using pure JavaScript, without DOM manipulation or event handling.
 
 Tasks Included
@@ -70,7 +67,6 @@ The assignment helped build a strong foundation in core JavaScript and provided 
 
 
 Week 4 Assignment – Advanced JavaScript & DOM Manipulation
-
 This project covers advanced JavaScript concepts and DOM manipulation through a series of practical tasks. The assignment focuses on handling data structures, writing modular functions, and creating interactive web applications by dynamically updating the webpage in response to user actions.
 
 Tasks Included
@@ -91,3 +87,51 @@ Function declarations, arrow functions, parameters and return values, array crea
 
 Purpose
 The assignment helped bridge the gap between basic programming logic and interactive web development, providing hands-on experience in managing data structures, handling user events, and building dynamic, responsive webpage interfaces from scratch.
+
+
+Week 5 Assignment – JavaScript Project Week
+This project focuses on applying the advanced JavaScript concepts and DOM manipulation skills learned in previous weeks to build a fully functional, interactive web application. The assignment emphasizes transitioning from isolated coding exercises to developing a complete, real-world project.
+
+Tasks Included
+Task 1: Project Planning & UI Layout
+Task 2: Setting up Semantic HTML Structure
+Task 3: Designing Responsive CSS Styling
+Task 4: Implementing Core JavaScript Logic & Data Management
+Task 5: DOM Updates & Event Handling
+Task 6: Testing, Debugging & Refactoring
+
+Technologies Used
+HTML5
+CSS3
+JavaScript (ES6+)
+
+Key Concepts Covered
+Application architecture, state management using arrays and objects, advanced DOM manipulation, event delegation, dynamic UI rendering, form validation, code modularity, local storage (data persistence), and debugging techniques.
+
+Purpose
+The assignment provided an opportunity to consolidate front-end skills by building a complete, interactive application from start to finish, emphasizing clean code architecture, problem-solving, and seamless user experience.
+
+
+Week 6 Assignment – Git, GitHub & Final Web Development Project
+This final assignment serves as the capstone for the 6-week internship. It involves developing a comprehensive, responsive, and interactive website while implementing professional version control practices using Git and deploying the live project to the web via GitHub Pages.
+
+Tasks Included
+Task 1: Git & Version Control
+Task 2: GitHub Repository Setup
+Task 3: Final Responsive Website Development
+Task 4: JavaScript Interactivity Implementation
+Task 5: GitHub Pages Deployment
+Task 6: Final Project Documentation & Reflection
+
+Technologies Used
+HTML5
+CSS3
+JavaScript (ES6+)
+Git
+GitHub & GitHub Pages
+
+Key Concepts Covered
+Version control commands (git init, status, add, commit, log, push), repository management, commit history, responsive web design (Flexbox, Grid, Media Queries), semantic HTML, DOM manipulation, interactive features (Search/Filter, Add/Edit/Delete), web hosting/deployment, and technical project documentation.
+
+Purpose
+The assignment served to apply the complete web development knowledge gained throughout the internship, bridging the gap between writing local code and professionally maintaining, versioning, and deploying a production-ready application to the web.
